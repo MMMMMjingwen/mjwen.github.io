@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>慢慢买优惠劵</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/baicaijia.css">
+
+</head>
+<body>
+<div class="mmb-container">
+  <!--头部-->
+  <div class="mmb-headerss">
+    <a href="index.html">
+      <span class='mui-icon mui-icon-left-nav mui-pull-left'></span>
+    </a>
+    <h3>优惠劵</h3>
+    <img class='mui-pull-right' src="images/header_app.png" alt="">
+  </div>
+
+  <ul class="mmb-main mui-clearfix">
+
+  </ul>
+  <!--底部-->
+  <div class="mmb-footer mui-clearfix">
+    <ul class='user'>
+      <a href="#">登陆</a>
+      <a href="#">注册</a>
+      <a  class='img'href="#">
+        <img src="images/top.jpg" alt="">
+        <span>返回顶部</span>
+      </a>
+    </ul>
+    <p>手机APP下载慢慢买手机版</p>
+    <p>m.manmanbuy.com</p>
+  </div>
+
+</div>
+</body>
+</html>
+<script type='text/template' id='tpl'>
+{{each result v i}}
+<li>
+  <a href="couponproduct.html?couponid={{v.couponId}}">
+  <img src="{{v.couponImg}}" alt="">
+  <p>{{v.couponTitle}}</p>
+  </a>
+</li>
+  {{/each}}
+</script>
+<script src='lib/mui/js/mui.js'></script>
+<script src='lib/zepto/zepto.min.js'></script>
+<script src='lib/artTemplate/template-web.js'></script>
+<script src='js/coupon.js'></script>
+

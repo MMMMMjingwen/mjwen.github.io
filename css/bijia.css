@@ -1,0 +1,108 @@
+@charset "UTF-8";
+.mmb-product {
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.mmb-product .setion {
+  padding: 0.2rem;
+}
+.mmb-product .setion a {
+  font-size: 0.4rem;
+  color: #000;
+  line-height: 1.44rem;
+}
+.mmb-product .setion button {
+  float: right;
+  margin-top: 0.2rem;
+}
+.mmb-product .proSelf {
+  background-color: #fff;
+}
+.mmb-product .proSelf p {
+  text-align: center;
+  font-size: 0.6rem;
+}
+.mmb-product .proSelf .img-box {
+  height: 7rem;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+.mmb-product .proSelf .img-box img {
+  height: 3.4rem;
+  width: 3.4rem;
+  position: absolute;
+  bottom: 0;
+  right: 37%;
+}
+.mmb-product .proSelf .img-box span {
+  position: absolute;
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: green;
+  border-radius: 50%;
+  bottom: 0.22rem;
+  right: 0.28rem;
+  line-height: 1.4rem;
+  font-size: 0.4rem;
+  color: #fff;
+}
+.mmb-product .proSelf .smallNav {
+  height: 1.3rem;
+  background-color: orange;
+  border-top: 1px solid red ;
+  border-bottom: 1px solid red ;
+  width: 100%;
+}
+.mmb-product .proSelf .smallNav a {
+  display: block;
+  width: 33.3%;
+  float: left;
+  height: 100%;
+  line-height: 1.3rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.5rem;
+}
+.mmb-product .proSelf .smallNav a:nth-child(2) {
+  border-right: 1px solid red ;
+  border-left: 1px solid red;
+}
+.mmb-product .priceNow {
+  width: 100%;
+  background-color: #fff;
+}
+.mmb-product .priceNow .logo {
+  float: left;
+  line-height: 1.88rem;
+}
+.mmb-product .priceNow .now {
+  float: right;
+  line-height: 1.88rem;
+}
+.mmb-product .priceNow .now button {
+  margin-top: 10px;
+  background-color: orange;
+  color: #fff;
+}
+.mmb-product .priceNow .note {
+  background-color: #fff;
+  width: 100%;
+  font-size: 0.4rem;
+  border-top: 1px solid red;
+}
+.mmb-pinjia .pingjia {
+  height: 1.2rem;
+  background-color: #dbdbdb;
+  text-align: center;
+  line-height: 1.2rem;
+}
+.mmb-pinjia .pjList {
+  background-color: #fff;
+}
+.mmb-pinjia .pjList li {
+  padding: 0.2rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.36rem;
+}

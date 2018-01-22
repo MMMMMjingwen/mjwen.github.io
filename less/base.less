@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+@import "color";
+@import "adapter";
+
+ul,
+li{
+  list-style: none;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+h3{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+//公共部分
+html,body{
+  height: 100%;
+}
+
+.mmb-container{
+  height: 100%;
+  width: 100%;
+  background-color: #D6D6D6;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 750px;
+}
+//头部
+.mmb-header{
+  height: 90rem/50;
+  background-color:#FF841D;
+  padding: 0 10rem/50;
+  img{
+    height: 40rem/50;
+    width: 300rem/50;
+    margin: 23rem/50 auto;
+  }
+  img:nth-child(2){
+    height: 55rem/50;
+    width: 55rem/50;
+    margin: 20rem/50 auto;
+  }
+}
+
+.mmb-footer{
+  .user{
+    font-size: 15rem/50;
+    margin: 0 auto;
+    text-align: center;
+  }
+  img{
+    height: 15rem/50;
+    width: 15rem/50;
+  }
+  p{
+    text-align: center;
+  }
+}
+
+
+
+@import "index";
+@import "category";
+@import "productlist";
+@import "bijia";
+@import "moneyctrl";
+@import "moneyproduct";
+@import "inlanddiscount";
+@import "discount";
+@import "baicaijia";
+@import "coupon";
+@import "couponproduct";
+@import "gsproduct";
+@import "sitennav";
+@import "brandTitle";

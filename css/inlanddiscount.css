@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.list li {
+  height: 12rem;
+  background-color: #fff;
+  padding: 0.2rem;
+  float: left;
+  width: 50%;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc ;
+}
+.list li a {
+  color: #000;
+}
+.list li a div {
+  margin-top: 0.4rem;
+}
+.list li a .img-box img {
+  display: block;
+  height: 5.6rem;
+  width: 5.6rem;
+  margin: 0 auto;
+}
+.list li a .title {
+  font-size: 0.4rem;
+}
+.list li a .price {
+  color: red;
+  font-size: 0.4rem;
+}
+.list li a .end {
+  font-size: 0.4rem;
+}

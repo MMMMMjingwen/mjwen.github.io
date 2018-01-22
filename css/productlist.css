@@ -1,0 +1,72 @@
+@charset "UTF-8";
+.mmb-productlist .setion {
+  padding: 0.2rem;
+  height: 1.52rem;
+  background-color: #f1f1f1;
+}
+.mmb-productlist .setion button {
+  background-color: #e4e4e4;
+  float: right;
+  margin-top: 0.1rem;
+}
+.mmb-productlist .setion a {
+  line-height: 1.4rem;
+  color: #000;
+  font-size: 0.4rem;
+}
+.mmb-productlist .information li {
+  width: 100%;
+  border-bottom: 1px solid red ;
+  padding-bottom: 0.4rem;
+  position: relative;
+}
+.mmb-productlist .information li a {
+  color: #000;
+}
+.mmb-productlist .information li .img-box {
+  float: left;
+  padding: 0.2rem;
+}
+.mmb-productlist .information li .img-info {
+  padding: 0.2rem;
+  position: absolute;
+  top: 0px;
+  left: 3.6rem;
+}
+.mmb-productlist .information li .img-info .title {
+  font-size: 0.4rem;
+  margin-bottom: 0.36rem;
+}
+.mmb-productlist .information li .img-info .price {
+  color: red;
+  font-size: 0.4rem;
+}
+.mmb-productlist .information li .img-info .pinlun {
+  font-size: 0.36rem;
+}
+.mmb-page {
+  padding: 0.2rem;
+  text-align: center;
+  margin-left: 4rem;
+}
+.mmb-page li {
+  float: left;
+  position: relative;
+  font-size: 0.4rem;
+}
+.mmb-page li a {
+  display: block;
+  line-height: 1.04rem;
+  height: 1.08rem;
+  width: 2rem;
+  color: #000;
+  border: 1px solid #ccc;
+}
+.mmb-page li span {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.9rem;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: gray transparent transparent transparent;
+}

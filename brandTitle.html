@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>比价商品分类</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/brandTitle.css">
+
+</head>
+<body>
+
+<div class="mmb-container">
+  <!--头部-->
+  <div class="mmb-header">
+    <a href="index.html"> <img class='mui-pull-left' src="images/header_logo.png" alt=""></a>
+    <img class='mui-pull-right' src="images/header_app.png" alt="">
+
+  </div>
+  <!--搜索框-->
+  <div class="mmb-search">
+    <input type="text" placeholder='输入你想比价的商品'>
+    <button >搜索</button>
+  </div>
+  <!--筛选-->
+  <div class="setion mui-clearfix">
+    <a href="index.html">首页</a>>
+    <a href="category.html">全部分类</a>>
+    <a href="javascript:(0);">电视</a>>
+  </div>
+
+  <!--排行-->
+  <div class="mmb-pk">
+    <div class="pk mui-clearfix">
+      <strong>热门品牌排行</strong>
+    </div>
+  </div>
+
+
+  <!--详细排行-->
+  <ul class='all'>
+
+    <li>
+      <a href="">
+        <strong>平板电视十大品牌</strong>
+        <i class='mui-icon mui-icon-arrowdown'></i>
+      </a>
+    </li>
+  </ul>
+  <!--底部-->
+  <div class="mmb-footer mui-clearfix">
+    <ul class='user'>
+      <a href="#">登陆</a>
+      <a href="#">注册</a>
+      <a  class='img'href="#">
+        <img src="images/top.jpg" alt="">
+        <span>返回顶部</span>
+      </a>
+    </ul>
+    <p>手机APP下载慢慢买手机版</p>
+    <p>m.manmanbuy.com</p>
+  </div>
+</div>
+
+</body>
+</html>
+<script type='text/template' id='tpl'>
+   {{each result v i}}
+   <li>
+     <a href="brand.html?brandtitleid={{v.brandTitleId}}">
+       <strong>{{v.brandTitle}}</strong>
+       <i class='mui-icon mui-icon-arrowdown'></i>
+     </a>
+   </li>
+  {{/each}}
+</script>
+<script src='lib/mui/js/mui.js'></script>
+<script src='lib/zepto/zepto.min.js'></script>
+<script src='lib/artTemplate/template-web.js'></script>
+<script src='js/brandTitle.js'></script>

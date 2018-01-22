@@ -1,0 +1,1051 @@
+@charset "UTF-8";
+/* 屏幕的适配 */
+@media (min-width: 320px) {
+  html {
+    font-size: 21.33px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 26.67px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 28.27px;
+  }
+}
+@media (min-width: 460px) {
+  html {
+    font-size: 30.67px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+ul,
+li {
+  list-style: none;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+h3 {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  height: 100%;
+}
+.mmb-container {
+  height: 100%;
+  width: 100%;
+  background-color: #D6D6D6;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 750px;
+}
+.mmb-header {
+  height: 1.8rem;
+  background-color: #FF841D;
+  padding: 0 0.2rem;
+}
+.mmb-header img {
+  height: 0.8rem;
+  width: 6rem;
+  margin: 0.46rem auto;
+}
+.mmb-header img:nth-child(2) {
+  height: 1.1rem;
+  width: 1.1rem;
+  margin: 0.4rem auto;
+}
+.mmb-footer .user {
+  font-size: 0.3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.mmb-footer img {
+  height: 0.3rem;
+  width: 0.3rem;
+}
+.mmb-footer p {
+  text-align: center;
+}
+.mmb-search {
+  height: 1.6rem;
+  width: 100%;
+  background-color: #fff;
+  padding: 0.2rem;
+  position: relative;
+}
+.mmb-search input,
+.mmb-search button {
+  border-radius: 1rem;
+  border: 1px solid transparent ;
+  padding: 0.16rem;
+}
+.mmb-search input {
+  background-color: #D6D6D6;
+  width: 12rem;
+  height: 1rem;
+  margin-right: 1rem;
+  margin-left: 0.4rem;
+}
+.mmb-search button {
+  position: absolute;
+  top: 0.16rem;
+  right: 0.4rem;
+  color: #fff;
+  background-color: #FF841D;
+  width: 2rem;
+}
+.mmb-nav {
+  margin: 0.2rem 0;
+  background-color: #fff;
+}
+.mmb-nav ul {
+  margin: 0;
+  padding: 0;
+}
+.mmb-nav li {
+  width: 25%;
+  float: left;
+}
+.mmb-nav li img {
+  display: block;
+  height: 1.8rem;
+  width: 1.8rem;
+  margin: 0.4rem auto;
+}
+.mmb-nav li p {
+  margin-top: 0.2rem;
+  text-align: center;
+}
+.mmb-list {
+  background-color: #fff;
+}
+.mmb-list .recomm {
+  height: 1.2rem;
+  width: 100%;
+  background-color: #FF9812;
+  padding: 0 0.2rem;
+}
+.mmb-list .recomm strong {
+  font-size: 0.5rem;
+  line-height: 1.2rem;
+  color: #fff;
+  font-weight: normal;
+}
+.mmb-list .recomm a {
+  float: right;
+  line-height: 1.6rem;
+}
+.mmb-list .recomm a img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.mmb-list .info-list {
+  margin-top: 0.4rem;
+}
+.mmb-list .info-list li {
+  position: relative;
+  padding: 0.2rem;
+  height: 3rem;
+  border-bottom: 1px solid #ccc;
+}
+.mmb-list .info-list img {
+  float: left;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.8rem;
+}
+.mmb-list .info-list .context {
+  margin-left: 3rem;
+  position: relative;
+}
+.mmb-list .info-list .context .title {
+  height: 2.96rem;
+  position: absolute;
+  top: 0;
+  font-size: 0.4rem;
+  color: #000;
+}
+.mmb-list .info-list .context .title .price {
+  color: red;
+}
+.mmb-list .info-list .context .info {
+  color: #ADACAE;
+  font-size: 0.4rem;
+  position: absolute;
+  bottom: 0rem;
+}
+.mmb-list .info-list .edit {
+  color: #ADACAE;
+  font-size: 0.4rem;
+  position: absolute;
+  right: 0px;
+  bottom: 0.24rem;
+}
+.mmb-list .more {
+  height: 1.2rem;
+  width: 14rem;
+  border: 1px solid #ccc;
+  font-size: 0.4rem;
+  padding: 0 0.2rem;
+  text-align: center;
+  line-height: 1.2rem;
+  margin: 0.06rem auto;
+  border-radius: 0.1rem;
+}
+.mmb-pk .pk {
+  height: 1.2rem;
+  width: 100%;
+  background-color: #FF9812;
+  padding: 0 0.2rem;
+}
+.mmb-pk .pk strong {
+  font-size: 0.5rem;
+  line-height: 1.2rem;
+  color: #fff;
+  font-weight: normal;
+}
+.mmb-pk .pk a {
+  float: right;
+  line-height: 1.6rem;
+}
+.mmb-pk .pk a img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.hide {
+  display: none;
+}
+.mmb-footer .user {
+  font-size: 0.3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.mmb-footer img {
+  height: 0.3rem;
+  width: 0.3rem;
+}
+.mmb-footer p {
+  text-align: center;
+}
+.mmb-menu {
+  width: 100%;
+}
+.mmb-menu .title {
+  font-weight: 700;
+  background-color: #EDEDED;
+}
+.mmb-menu .down li {
+  float: left;
+  width: 33.33%;
+  height: 1rem;
+  line-height: 1rem;
+  color: #000;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background-color: #F9F9F9;
+}
+.mmb-menu .down li a {
+  color: #000;
+  font-size: 0.3rem;
+  display: block;
+  width: 100%;
+}
+.mmb-menu .mui-table-view-cell.mui-collapse .down {
+  padding: 0;
+}
+.mmb-menu .mui-table-view-cell.mui-collapse .mui-collapse-content {
+  margin-top: -8px;
+  background-color: #F9F9F9;
+}
+.mmb-productlist .setion {
+  padding: 0.2rem;
+  height: 1.52rem;
+  background-color: #f1f1f1;
+}
+.mmb-productlist .setion button {
+  background-color: #e4e4e4;
+  float: right;
+  margin-top: 0.1rem;
+}
+.mmb-productlist .setion a {
+  line-height: 1.4rem;
+  color: #000;
+  font-size: 0.4rem;
+}
+.mmb-productlist .information li {
+  width: 100%;
+  border-bottom: 1px solid red ;
+  padding-bottom: 0.4rem;
+  position: relative;
+}
+.mmb-productlist .information li a {
+  color: #000;
+}
+.mmb-productlist .information li .img-box {
+  float: left;
+  padding: 0.2rem;
+}
+.mmb-productlist .information li .img-info {
+  padding: 0.2rem;
+  position: absolute;
+  top: 0px;
+  left: 3.6rem;
+}
+.mmb-productlist .information li .img-info .title {
+  font-size: 0.4rem;
+  margin-bottom: 0.36rem;
+}
+.mmb-productlist .information li .img-info .price {
+  color: red;
+  font-size: 0.4rem;
+}
+.mmb-productlist .information li .img-info .pinlun {
+  font-size: 0.36rem;
+}
+.mmb-page {
+  padding: 0.2rem;
+  text-align: center;
+  margin-left: 4rem;
+}
+.mmb-page li {
+  float: left;
+  position: relative;
+  font-size: 0.4rem;
+}
+.mmb-page li a {
+  display: block;
+  line-height: 1.04rem;
+  height: 1.08rem;
+  width: 2rem;
+  color: #000;
+  border: 1px solid #ccc;
+}
+.mmb-page li span {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.9rem;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: gray transparent transparent transparent;
+}
+.mmb-product {
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.mmb-product .setion {
+  padding: 0.2rem;
+}
+.mmb-product .setion a {
+  font-size: 0.4rem;
+  color: #000;
+  line-height: 1.44rem;
+}
+.mmb-product .setion button {
+  float: right;
+  margin-top: 0.2rem;
+}
+.mmb-product .proSelf {
+  background-color: #fff;
+}
+.mmb-product .proSelf p {
+  text-align: center;
+  font-size: 0.6rem;
+}
+.mmb-product .proSelf .img-box {
+  height: 7rem;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+.mmb-product .proSelf .img-box img {
+  height: 3.4rem;
+  width: 3.4rem;
+  position: absolute;
+  bottom: 0;
+  right: 37%;
+}
+.mmb-product .proSelf .img-box span {
+  position: absolute;
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: green;
+  border-radius: 50%;
+  bottom: 0.22rem;
+  right: 0.28rem;
+  line-height: 1.4rem;
+  font-size: 0.4rem;
+  color: #fff;
+}
+.mmb-product .proSelf .smallNav {
+  height: 1.3rem;
+  background-color: orange;
+  border-top: 1px solid red ;
+  border-bottom: 1px solid red ;
+  width: 100%;
+}
+.mmb-product .proSelf .smallNav a {
+  display: block;
+  width: 33.3%;
+  float: left;
+  height: 100%;
+  line-height: 1.3rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.5rem;
+}
+.mmb-product .proSelf .smallNav a:nth-child(2) {
+  border-right: 1px solid red ;
+  border-left: 1px solid red;
+}
+.mmb-product .priceNow {
+  width: 100%;
+  background-color: #fff;
+}
+.mmb-product .priceNow .logo {
+  float: left;
+  line-height: 1.88rem;
+}
+.mmb-product .priceNow .now {
+  float: right;
+  line-height: 1.88rem;
+}
+.mmb-product .priceNow .now button {
+  margin-top: 10px;
+  background-color: orange;
+  color: #fff;
+}
+.mmb-product .priceNow .note {
+  background-color: #fff;
+  width: 100%;
+  font-size: 0.4rem;
+  border-top: 1px solid red;
+}
+.mmb-pinjia .pingjia {
+  height: 1.2rem;
+  background-color: #dbdbdb;
+  text-align: center;
+  line-height: 1.2rem;
+}
+.mmb-pinjia .pjList {
+  background-color: #fff;
+}
+.mmb-pinjia .pjList li {
+  padding: 0.2rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.36rem;
+}
+.mmb-headers {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  height: 1.8rem;
+  background-color: #ff941d;
+  position: relative;
+}
+.mmb-headers span {
+  line-height: 1.8rem;
+  color: #fff;
+  font-size: 1rem;
+}
+.mmb-headers h3 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 1.8rem;
+}
+.mmb-headers img {
+  height: 0.88rem;
+  width: 1rem;
+  position: absolute;
+  top: 0.3rem;
+  right: 0.1rem;
+}
+.mmb-lists {
+  background-color: #fff;
+}
+.mmb-lists li {
+  height: 4rem;
+  position: relative;
+  padding: 0.4rem;
+}
+.mmb-lists .img-box img {
+  float: left;
+  height: 2rem;
+  position: absolute;
+  top: 0.6rem;
+}
+.mmb-lists .info-title {
+  float: left;
+  margin-left: 1rem;
+  position: absolute;
+  top: 0.6rem;
+  left: 1.8rem;
+  font-size: 0.4rem;
+}
+.mmb-lists .info-time {
+  color: #ccc;
+  font-size: 0.4rem;
+  float: left;
+  position: absolute;
+  bottom: 0.8rem;
+  left: 19%;
+}
+.mmb-lists .pinlun {
+  color: #ccc;
+  font-size: 0.4rem;
+  position: absolute;
+  bottom: 0.8rem;
+  right: 0.2rem;
+}
+.mmb-page {
+  padding: 0.2rem;
+  text-align: center;
+  margin-left: 4rem;
+}
+.mmb-page li {
+  float: left;
+  position: relative;
+  font-size: 0.4rem;
+}
+.mmb-page li a {
+  display: block;
+  line-height: 1.04rem;
+  height: 1.08rem;
+  width: 2rem;
+  color: #000;
+  border: 1px solid #ccc;
+}
+.mmb-page li span {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.9rem;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: gray transparent transparent transparent;
+}
+.big {
+  background-color: #fff;
+  padding: 0.6rem;
+}
+.big .title {
+  font-weight: 700;
+}
+.big .info {
+  margin-top: 0.36rem;
+}
+.big .info span {
+  color: gray;
+  font-size: 0.5rem;
+}
+.big .imgSm .txt {
+  margin-right: 4.2rem;
+}
+.big .imgSm .small {
+  float: right;
+  position: absolute;
+  top: 3.4rem;
+  right: 0.4rem;
+}
+.big .imgSm .small img {
+  height: 4rem;
+  width: 4rem;
+}
+.big .imglg img {
+  height: 8rem;
+  margin-left: 20%;
+}
+.big #disstorcks {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  height: 100%;
+  font-size: 0.3rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 1px;
+  width: 30%;
+  margin: 0 auto;
+}
+.big #disstorcks li {
+  width: 100%;
+  border-bottom: 1px dashed #000;
+}
+.big #disstorcks li span {
+  color: #000;
+}
+.big #disstorcks li span strong {
+  color: orange;
+  margin: 0.6rem;
+}
+.big .go {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 0.6rem;
+}
+.big .img-box img {
+  width: 100%;
+}
+.big .allLook .form {
+  position: relative;
+}
+.big .allLook .form input[class='open'] {
+  width: 20%;
+  text-align: center;
+  background-color: orange;
+  border: none;
+  position: absolute;
+  bottom: 0.6rem;
+  right: 0px;
+  color: #fff;
+}
+.big .allLook .list .userimg {
+  float: left;
+}
+.big .allLook .list .userimg img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 1rem;
+}
+.big .allLook .list .con {
+  font-size: 0.4rem;
+  position: relative;
+}
+.big .allLook .list .con .content {
+  position: absolute;
+  bottom: 0px;
+  left: 14%;
+}
+.list li {
+  height: 12rem;
+  background-color: #fff;
+  padding: 0.2rem;
+  float: left;
+  width: 50%;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc ;
+}
+.list li a {
+  color: #000;
+}
+.list li a div {
+  margin-top: 0.4rem;
+}
+.list li a .img-box img {
+  display: block;
+  height: 5.6rem;
+  width: 5.6rem;
+  margin: 0 auto;
+}
+.list li a .title {
+  font-size: 0.4rem;
+}
+.list li a .price {
+  color: red;
+  font-size: 0.4rem;
+}
+.list li a .end {
+  font-size: 0.4rem;
+}
+.big {
+  background-color: #fff;
+  padding: 0.6rem;
+}
+.big .title {
+  font-weight: 700;
+}
+.big .title p {
+  color: red;
+  font-size: 0.4rem;
+}
+.big .title .maket {
+  color: #ccc;
+  font-size: 0.4rem;
+}
+.big .imgSm .txt {
+  margin-right: 4.2rem;
+}
+.big .imgSm .small {
+  float: right;
+  position: absolute;
+  top: 3.4rem;
+  right: 0.4rem;
+}
+.big .imgSm .small img {
+  height: 4rem;
+  width: 4rem;
+}
+.big .imglg img {
+  height: 8rem;
+  margin-left: 20%;
+}
+.big .go {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 0.6rem;
+}
+.big .img-box img {
+  width: 100%;
+}
+.big .allLook .form {
+  position: relative;
+}
+.big .allLook .form input[class='open'] {
+  width: 20%;
+  text-align: center;
+  background-color: orange;
+  border: none;
+  position: absolute;
+  bottom: 0.6rem;
+  right: 0px;
+  color: #fff;
+}
+.mmb-headerss {
+  background-color: #F4483E;
+  height: 1.74rem;
+  position: relative;
+}
+.mmb-headerss a span {
+  color: #fff;
+  line-height: 1.74rem;
+}
+.mmb-headerss h3 {
+  text-align: center;
+  color: #fff;
+  line-height: 1.74rem;
+}
+.mmb-headerss img {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0.3rem;
+  right: 0.2rem;
+}
+.mmb-navs {
+  background-color: #fff;
+  position: relative;
+}
+.mmb-navs .search {
+  z-index: 22;
+  background-color: #ccc;
+  float: right;
+  display: block;
+  height: 1.32rem;
+  width: 1.32rem;
+  text-align: center;
+  border: 2px solid #ccc;
+  line-height: 1.32rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.big {
+  background-color: #ccc;
+}
+.big ul {
+  background-color: #fff;
+}
+.big li {
+  position: relative;
+}
+.big .img-box img {
+  float: left;
+  width: 3rem;
+  height: 3rem;
+}
+.big .content {
+  font-size: 0.5rem;
+  float: left;
+}
+.big .content div {
+  margin-bottom: 0.4rem;
+}
+.big .content .price span {
+  color: red;
+}
+.big .content .num {
+  position: relative;
+}
+.big .content .num i {
+  position: relative;
+  box-sizing: border-box;
+  width: 3rem;
+  height: 1rem;
+  border: 1px solid #fc353a;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 900;
+  background: #ffb7b7;
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
+}
+.big .content .num b {
+  position: absolute;
+  top: 0.06rem;
+  right: 0.2rem;
+}
+.big .content .card a {
+  text-align: center;
+  text-decoration: underline;
+  color: red;
+  display: block;
+  border: 1px dashed red ;
+}
+.big .link {
+  text-align: center;
+  line-height: 1rem;
+  display: block;
+  height: 1rem;
+  width: 3rem;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0;
+  font-size: 0.5rem;
+  color: #fff;
+  background-color: red;
+  border-radius: 0.1rem;
+}
+.mmb-main {
+  background-color: #fff;
+}
+.mmb-main li {
+  height: 4rem;
+  width: 4rem;
+  border: 1PX solid gray;
+  float: left;
+  text-align: center;
+  margin: 0.4rem;
+}
+.mmb-main img {
+  height: 2rem;
+  width: 2rem;
+  margin: 0 auto;
+  margin-top: 0.2rem;
+}
+.mmb-main p {
+  display: block;
+  margin-top: 0.2rem;
+}
+.kfc {
+  background-color: #fff;
+}
+.kfc .title {
+  height: 1.34rem;
+  font-size: 0.4rem;
+  color: #ccc;
+  text-align: center;
+}
+.kfc .checken li {
+  height: 6rem;
+  padding: 0.4rem;
+  border-bottom: 1px solid #ccc ;
+  position: relative;
+  width: 100%;
+}
+.kfc .checken li .imgs {
+  height: 3rem;
+  width: 3rem;
+  float: left;
+}
+.kfc .checken li .imgs img {
+  height: 100%;
+  width: 100%;
+}
+.kfc .checken li .text {
+  margin-left: 4rem;
+}
+.kfc .checken li .text div {
+  margin-top: 0.2rem;
+}
+.kfc .checken li .text .informs {
+  color: #000;
+}
+.kfc .checken li .text .price {
+  font-weight: 900;
+  color: #000;
+}
+.kfc .checken li .text .time {
+  color: gold;
+  font-size: 0.4rem;
+}
+.kfc .checken li .right {
+  color: #ccc;
+  position: absolute;
+  bottom: 50%;
+  right: 0px;
+}
+.mui-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.mui-backdrop .mui-slider {
+  height: 10rem !important;
+  width: 10rem !important;
+  margin: 6rem auto;
+}
+.mui-backdrop .mui-slider img {
+  height: 100%;
+  width: 100%;
+}
+.mui-backdrop i {
+  position: absolute;
+  top: 50%;
+}
+.mui-backdrop .left {
+  left: 0.6rem;
+}
+.mui-backdrop .right {
+  right: 0.6rem;
+}
+.mmb-navs li {
+  width: 33.3%;
+  float: left;
+}
+.mmb-navs li select {
+  font-size: 0.6rem;
+}
+.mmb-pro li {
+  padding: 0.2rem;
+  width: 50%;
+  float: left;
+  background-color: #fff;
+}
+.mmb-pro li .img-box {
+  width: 3rem;
+  height: 3rem;
+}
+.mmb-pro li .img-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-left: 1rem;
+}
+.mmb-pro li .ititle {
+  font-size: 0.5rem;
+  position: relative;
+}
+.mmb-pro li .ititle span {
+  font-size: 0.6rem;
+  color: red;
+}
+.mmb-pro li .ititle button {
+  background-color: orange;
+  position: absolute;
+  bottom: 0.1rem;
+  right: 0.4rem;
+}
+.brand {
+  padding-left: 4rem;
+  padding-top: 0.4rem;
+  padding-right: 2rem;
+}
+.brand li {
+  padding: 0.4rem;
+  margin: 0.06rem;
+  background-color: #fff;
+  float: left;
+  margin-left: 0.06rem;
+  line-height: 1.6rem;
+  text-align: center;
+}
+.brand li a {
+  display: block;
+}
+.setion {
+  padding: 0.2rem;
+  height: 1.52rem;
+  background-color: #f1f1f1;
+}
+.setion a {
+  line-height: 1.4rem;
+  color: #000;
+  font-size: 0.4rem;
+}
+.mmb-pk .pk {
+  margin: 0.2rem;
+  height: 1.8rem;
+  width: 95%;
+  background-color: gray;
+}
+.mmb-pk .pk strong {
+  font-size: 0.6rem;
+  line-height: 1.8rem;
+  color: #fff;
+  font-weight: normal;
+}
+.all {
+  width: 100%;
+}
+.all li:nth-child(1) {
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+.all li {
+  background-color: #EDEDED;
+  height: 2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-bottom: 1px solid #ccc;
+  line-height: 2rem;
+}
+.all li a {
+  color: #000;
+}
+.all li i {
+  float: right;
+  line-height: 2rem;
+}

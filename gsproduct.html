@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>凑单品</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/gsproduct.css">
+</head>
+<body>
+<div class="mmb-container">
+  <!--头部-->
+  <div class="mmb-headers">
+    <a href="index.html">
+      <span class='mui-icon mui-icon-left-nav mui-pull-left'></span>
+    </a>
+    <h3>凑单品</h3>
+    <img class='mui-pull-right' src="images/header_app.png" alt="">
+
+  </div>
+
+  <!--导航-->
+  <div class="mmb-navs">
+  <!--下拉列表-->
+    <ul>
+      <li>
+        <select name="" class='maket'>
+          <option value="1">京东</option>
+          <option value="1">2</option>
+          <option value="1">3</option>
+        </select>
+      </li>
+      <li >
+        <select name="" class='ground'>
+          <option value="1">华北</option>
+          <option value="1">2</option>
+          <option value="1">3</option>
+        </select>
+      </li>
+      <li>
+        <select name=""   class='price'>
+          <option value="1">全部价格</option>
+        </select>
+      </li>
+
+
+    </ul>
+    <!--搜索框-->
+    <div class="search mui-clearfix">
+      <span class='mui-icon mui-icon-search'></span>
+    </div>
+  </div>
+
+  <!--商品列表-->
+    <ul class="mmb-pro">
+      <li >
+        <div class="img-box">
+          <img src="./images/ic_mall.png" alt="">
+        </div>
+        <div class="ititle ">
+          <p class='mui-ellipsis'>
+            廿一客(21cake)专用餐具 1人份(不单独配送)
+          </p>
+          <span>&yen;10.9元</span>
+          <button href="">去凑单</button>
+        </div>
+      </li>
+      <li >
+        <div class="img-box">
+          <img src="./images/ic_mall.png" alt="">
+        </div>
+        <div class="ititle ">
+          <p class='mui-ellipsis'>
+            廿一客(21cake)专用餐具 1人份(不单独配送)
+          </p>
+          <span>&yen;10.9元</span>
+          <button href="">去凑单</button>
+        </div>
+      </li>
+
+    </ul>
+
+
+
+  <!--&lt;!&ndash;底部&ndash;&gt;-->
+  <!--<div class="mmb-footer mui-clearfix">-->
+    <!--<ul class='user'>-->
+      <!--<a href="#">登陆</a>-->
+      <!--<a href="#">注册</a>-->
+      <!--<a  class='img'href="#">-->
+        <!--<img src="images/top.jpg" alt="">-->
+        <!--<span>返回顶部</span>-->
+      <!--</a>-->
+    <!--</ul>-->
+    <!--<p>手机APP下载慢慢买手机版</p>-->
+    <!--<p>m.manmanbuy.com</p>-->
+  <!--</div>-->
+
+</div>
+</body>
+</html>
+
+ <!-- 店铺模板-->
+<script type='text/template' id='tpl'>
+  {{each result v i}}
+  <option value="{{v.shopId}}">{{v.shopName}}</option>
+  {{/each}}
+</script>
+
+<!--区域模板-->
+<script type='text/template' id='tpl2'>
+  {{each result v i}}
+  <option  value="{{v.areaId}}">{{v.areaName}}</option>
+  {{/each}}
+</script>
+
+<!--列表模板-->
+<script type='text/template' id='tpl3'>
+  {{each result v i}}
+  <li >
+    <div class="img-box">
+      <img src="{{v.productImg}}" alt="">
+    </div>
+    <div class="ititle ">
+      <p class='mui-ellipsis'>
+       {{v.productName}}
+      </p>
+      <span>{{v.productPrice}}</span>
+      <button href="">去凑单</button>
+    </div>
+  </li>
+  {{/each}}
+</script>
+
+<script src='lib/mui/js/mui.js'></script>
+<script src='lib/zepto/zepto.min.js'></script>
+<script src='lib/artTemplate/template-web.js'></script>
+<script src='js/gsproduct.js'></script>

@@ -1,0 +1,161 @@
+@charset "UTF-8";
+.mmb-pks .pk {
+  height: 1.2rem;
+  background-color: #c4c4c4;
+  padding: 0 0.2rem;
+}
+.mmb-pks .pk strong {
+  font-size: 0.5rem;
+  line-height: 1.2rem;
+  color: goldenrod;
+  font-weight: normal;
+}
+.alls {
+  width: 100%;
+}
+.alls li:nth-child(1) {
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+.alls li {
+  position: relative;
+  background-color: #fff;
+  height: 3rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-bottom: 1px solid #ccc;
+  line-height: 2rem;
+}
+.alls li a {
+  color: #000;
+}
+.alls li i {
+  float: right;
+  line-height: 2rem;
+}
+.alls li strong {
+  margin-left: 1rem;
+  line-height: 2.6rem;
+}
+.alls li p {
+  font-size: 0.4rem;
+  position: absolute;
+  top: 41px;
+  left: 7%;
+}
+.alls li span {
+  display: inline-block;
+  color: #000;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  width: 1rem;
+  position: absolute;
+  top: 28%;
+  left: 0px;
+}
+.mmb-pk2 .pk {
+  height: 1.2rem;
+  background-color: #c4c4c4;
+  padding: 0 0.2rem;
+}
+.mmb-pk2 .pk strong {
+  font-size: 0.5rem;
+  line-height: 1.2rem;
+  color: goldenrod;
+  font-weight: normal;
+}
+.information1 li {
+  width: 100%;
+  border-bottom: 1px solid red ;
+  padding-bottom: 0.4rem;
+  position: relative;
+}
+.information1 li a {
+  color: #000;
+}
+.information1 li .img-box {
+  float: left;
+  padding: 0.2rem;
+}
+.information1 li .img-info {
+  padding: 0.2rem;
+  position: absolute;
+  top: 0px;
+  left: 3.6rem;
+}
+.information1 li .img-info .title {
+  font-size: 0.4rem;
+  margin-bottom: 0.36rem;
+}
+.information1 li .img-info .price {
+  color: red;
+  font-size: 0.4rem;
+}
+.information1 li .img-info .pinlun {
+  font-size: 0.36rem;
+}
+.information1 li .star {
+  font-size: 0.5rem;
+  color: gold;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.mmb-pk3 .pk {
+  height: 1.2rem;
+  background-color: #c4c4c4;
+  padding: 0 0.2rem;
+}
+.mmb-pk3 .pk strong {
+  font-size: 0.5rem;
+  line-height: 1.2rem;
+  color: goldenrod;
+  font-weight: normal;
+}
+.pjLists li {
+  border-bottom: 1px solid #ccc;
+}
+.pjLists .up {
+  margin-top: 0.4rem;
+}
+.pjLists .up .img-box {
+  float: left;
+  height: 4rem;
+  width: 4rem;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.pjLists .up .img-box img {
+  height: 2rem;
+  width: 2rem;
+}
+.pjLists .up .biaoti {
+  margin-left: 4rem;
+  font-size: 0.4rem;
+  color: gray;
+}
+.pjLists .down {
+  position: relative;
+  margin: 0.4rem;
+  margin-top: -0.02rem;
+  border: 1px solid #000;
+}
+.pjLists .down .num span {
+  color: gold;
+}
+.pjLists .down .san {
+  height: 0.6rem;
+  width: 0.6rem;
+  background-color: #fff;
+  transform: rotate(135deg);
+  position: absolute;
+  top: 7%;
+  z-index: -999;
+  left: 30px;
+}
+.pjLists .down .btxt {
+  margin: 0.2rem;
+  font-size: 0.5rem;
+  background-color: #fff;
+}

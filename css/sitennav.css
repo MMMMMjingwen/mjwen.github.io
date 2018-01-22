@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.brand {
+  padding-left: 4rem;
+  padding-top: 0.4rem;
+  padding-right: 2rem;
+}
+.brand li {
+  padding: 0.4rem;
+  margin: 0.06rem;
+  background-color: #fff;
+  float: left;
+  margin-left: 0.06rem;
+  line-height: 1.6rem;
+  text-align: center;
+}
+.brand li a {
+  display: block;
+}

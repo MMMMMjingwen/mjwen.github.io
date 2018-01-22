@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.mmb-main {
+  background-color: #fff;
+}
+.mmb-main li {
+  height: 4rem;
+  width: 4rem;
+  border: 1PX solid gray;
+  float: left;
+  text-align: center;
+  margin: 0.4rem;
+}
+.mmb-main img {
+  height: 2rem;
+  width: 2rem;
+  margin: 0 auto;
+  margin-top: 0.2rem;
+}
+.mmb-main p {
+  display: block;
+  margin-top: 0.2rem;
+}

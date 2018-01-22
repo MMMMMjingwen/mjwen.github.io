@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.big {
+  background-color: #fff;
+  padding: 0.6rem;
+}
+.big .title {
+  font-weight: 700;
+}
+.big .title p {
+  color: red;
+  font-size: 0.4rem;
+}
+.big .title .maket {
+  color: #ccc;
+  font-size: 0.4rem;
+}
+.big .imgSm .txt {
+  margin-right: 4.2rem;
+}
+.big .imgSm .small {
+  float: right;
+  position: absolute;
+  top: 3.4rem;
+  right: 0.4rem;
+}
+.big .imgSm .small img {
+  height: 4rem;
+  width: 4rem;
+}
+.big .imglg img {
+  height: 8rem;
+  margin-left: 20%;
+}
+.big .go {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 0.6rem;
+}
+.big .img-box img {
+  width: 100%;
+}
+.big .allLook .form {
+  position: relative;
+}
+.big .allLook .form input[class='open'] {
+  width: 20%;
+  text-align: center;
+  background-color: orange;
+  border: none;
+  position: absolute;
+  bottom: 0.6rem;
+  right: 0px;
+  color: #fff;
+}

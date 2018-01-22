@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>慢慢买优惠劵</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/couponproduct.css">
+
+</head>
+<body>
+<div class="mmb-container">
+  <!--头部-->
+  <div class="mmb-headerss">
+    <a href="index.html">
+      <span class='mui-icon mui-icon-left-nav mui-pull-left'></span>
+    </a>
+    <h3>肯德基优惠劵</h3>
+    <img class='mui-pull-right' src="images/header_app.png" alt="">
+  </div>
+
+ <!--肯德基-->
+  <div class="mui-backdrop">
+    <i class='mui-icon mui-icon-back mui-pull-left left'></i>
+    <div class="mui-slider">
+      <div class="mui-slider-group">
+      </div>
+    </div>
+    <i class='mui-icon mui-icon-forward mui-pull-right right'></i>
+  </div>
+
+  <div class="kfc">
+
+     <div class="title">
+       <p>
+         --点餐前出示手机中的优惠券，即可享受优惠--
+       </p>
+     </div>
+    <ul class='checken'>
+      <li >
+   <a href="#">
+        <div class="imgs">
+          <img src="./images/ic_bcj.png" alt="">
+        </div>
+        <div class="text">
+          <div class="informs  mui-pull-left">
+            C27 两人小食组242ry6uhrthrggfhghdghfhgfhfdh
+          </div>
+           <div class="price">
+             &yen;28
+           </div>
+            <div class="time">
+              有效期至10月31日
+            </div>
+        </div>
+        <span class='  mui-icon mui-icon-arrowright right'></span>
+    </a>
+      </li>
+    </ul>
+  </div>
+
+
+  <!--底部-->
+  <div class="mmb-footer mui-clearfix">
+    <ul class='user'>
+      <a href="#">登陆</a>
+      <a href="#">注册</a>
+      <a  class='img'href="#">
+        <img src="images/top.jpg" alt="">
+        <span>返回顶部</span>
+      </a>
+    </ul>
+    <p>手机APP下载慢慢买手机版</p>
+    <p>m.manmanbuy.com</p>
+  </div>
+
+</div>
+</body>
+</html>
+<script type='text/template' id='tpl'>
+  {{each result v i}}
+  <li class='k'>
+    <a href="#">
+      <div class="imgs">
+        {{@ v.couponProductImg}}
+      </div>
+      <div class="text">
+        <div class="informs  mui-pull-left">
+        {{v.couponProductName}}
+        </div>
+        <div class="price">
+          {{v.couponProductPrice}}
+        </div>
+        <div class="time">
+          {{v.couponProductTime}}
+        </div>
+      </div>
+      <span class='  mui-icon mui-icon-arrowright right'></span>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+<script type='text/html' id='tpl2'>
+
+
+
+{{each result v i}}
+      <div class="mui-slider-item">
+        <a data-couponProductId={{v.couponProductId}} class='lb' href="#">
+          {{@ v.couponProductImg}}
+        </a>
+      </div>
+      {{/each }}
+
+
+</script>
+<script src='lib/mui/js/mui.js'></script>
+<script src='lib/zepto/zepto.min.js'></script>
+<script src='lib/artTemplate/template-web.js'></script>
+<script src='js/couponproduct.js'></script>
+
+

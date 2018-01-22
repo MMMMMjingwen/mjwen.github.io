@@ -1,0 +1,78 @@
+@charset "UTF-8";
+.kfc {
+  background-color: #fff;
+}
+.kfc .title {
+  height: 1.34rem;
+  font-size: 0.4rem;
+  color: #ccc;
+  text-align: center;
+}
+.kfc .checken li {
+  height: 6rem;
+  padding: 0.4rem;
+  border-bottom: 1px solid #ccc ;
+  position: relative;
+  width: 100%;
+}
+.kfc .checken li .imgs {
+  height: 3rem;
+  width: 3rem;
+  float: left;
+}
+.kfc .checken li .imgs img {
+  height: 100%;
+  width: 100%;
+}
+.kfc .checken li .text {
+  margin-left: 4rem;
+}
+.kfc .checken li .text div {
+  margin-top: 0.2rem;
+}
+.kfc .checken li .text .informs {
+  color: #000;
+}
+.kfc .checken li .text .price {
+  font-weight: 900;
+  color: #000;
+}
+.kfc .checken li .text .time {
+  color: gold;
+  font-size: 0.4rem;
+}
+.kfc .checken li .right {
+  color: #ccc;
+  position: absolute;
+  bottom: 50%;
+  right: 0px;
+}
+.mui-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.mui-backdrop .mui-slider {
+  height: 10rem !important;
+  width: 10rem !important;
+  margin: 6rem auto;
+}
+.mui-backdrop .mui-slider img {
+  height: 100%;
+  width: 100%;
+}
+.mui-backdrop i {
+  position: absolute;
+  top: 50%;
+}
+.mui-backdrop .left {
+  left: 0.6rem;
+}
+.mui-backdrop .right {
+  right: 0.6rem;
+}

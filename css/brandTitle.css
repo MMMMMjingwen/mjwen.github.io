@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.setion {
+  padding: 0.2rem;
+  height: 1.52rem;
+  background-color: #f1f1f1;
+}
+.setion a {
+  line-height: 1.4rem;
+  color: #000;
+  font-size: 0.4rem;
+}
+.mmb-pk .pk {
+  margin: 0.2rem;
+  height: 1.8rem;
+  width: 95%;
+  background-color: gray;
+}
+.mmb-pk .pk strong {
+  font-size: 0.6rem;
+  line-height: 1.8rem;
+  color: #fff;
+  font-weight: normal;
+}
+.all {
+  width: 100%;
+}
+.all li:nth-child(1) {
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+.all li {
+  background-color: #EDEDED;
+  height: 2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-bottom: 1px solid #ccc;
+  line-height: 2rem;
+}
+.all li a {
+  color: #000;
+}
+.all li i {
+  float: right;
+  line-height: 2rem;
+}

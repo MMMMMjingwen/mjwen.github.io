@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>慢慢买省钱控</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/moneyctrl.css">
+</head>
+<body>
+<div class="mmb-container">
+  <!--头部-->
+  <div class="mmb-headers">
+    <a href="index.html">
+      <span class='mui-icon mui-icon-left-nav mui-pull-left'></span>
+    </a>
+     <h3>省钱控 - 最新优惠9</h3>
+    <img class='mui-pull-right' src="images/header_app.png" alt="">
+
+  </div>
+  <!--商品列表-->
+  <div class="mmb-lists">
+    <ul class='info-list mui-clearfix'>
+        <li >
+          <div class="img-box  ">
+            <img src="./images/ic_mall.png" alt="">
+          </div>
+          <div class="info-title mui-clearfix mui-ellipsis-2">
+            移动端凑单品：海天 鲜味 生抽 1.28L
+            <span>10.9元</span>
+          </div>
+          <div class="info-time">
+            <span>京东商城</span>|
+            <span>10:35 12:10</span>
+          </div>
+          <div class="pinlun">
+            <i class='mui-icon mui-icon-camera'></i>
+            <span>1</span>
+          </div>
+        </li>
+        <li >
+        <div class="img-box  ">
+          <img src="./images/ic_mall.png" alt="">
+        </div>
+        <div class="info-title mui-clearfix mui-ellipsis-2">
+          移动端凑单品：海天 鲜味 生抽 1.28L
+          <span>10.9元</span>
+        </div>
+        <div class="info-time">
+          <span>京东商城</span>|
+          <span>10:35 12:10</span>
+        </div>
+        <div class="pinlun">
+          <i class='mui-icon mui-icon-camera'></i>
+          <span>1</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+
+  <!--分页-->
+  <ul class="mmb-page mui-clearfix">
+    <li>
+      <a href="javascript:;" class='prev'>上一页</a>
+    </li>
+    <li class='pages'>
+      <select name="page" id="currentage">1/14
+        <option name='pa' value="1">1/14</option>
+        <option name='pa' value="2">2/14</option>
+        <option name='pa' value="3">3/14</option>
+        <option name='pa' value="4">4/14</option>
+        <option name='pa' value="5">5/14</option>
+        <option name='pa' value="6">6/14</option>
+        <option name='pa' value="7">7/14</option>
+        <option name='pa' value="8">8/14</option>
+        <option name='pa' value="9">9/14</option>
+        <option name='pa' value="10">10/14</option>
+        <option name='pa' value="11">11/14</option>
+        <option name='pa' value="12">12/14</option>
+        <option name='pa' value="13">13/14</option>
+        <option name='pa' value="14">14/14</option>
+      </select>
+    </li>
+    <li>
+      <a href="javascript:;" class='next'>下一页</a>
+    </li>
+  </ul>
+
+
+  <!--底部-->
+  <div class="mmb-footer mui-clearfix">
+    <ul class='user'>
+      <a href="#">登陆</a>
+      <a href="#">注册</a>
+      <a  class='img'href="#">
+        <img src="images/top.jpg" alt="">
+        <span>返回顶部</span>
+      </a>
+    </ul>
+    <p>手机APP下载慢慢买手机版</p>
+    <p>m.manmanbuy.com</p>
+  </div>
+
+</div>
+</body>
+</html>
+<script type='text/template' id='tpl'>
+ {{each result v i}}
+  <li>
+    <a href="moneyproduct.html?productid={{v.productId}}">
+    <div class="img-box">
+      {{@ v.productImg2}}
+    </div>
+    <div class="info-title mui-clearfix mui-ellipsis-2">
+      {{v.productName}}
+      <span style='color:red'>10.9元</span>
+    </div>
+    <div class="info-time">
+      <span>{{v.productFrom}}</span>|
+      <span>{{v.productTime}}</span>
+    </div>
+    <div class="pinlun">
+      <i class='mui-icon mui-icon-camera'></i>
+      <span>{{v.productComCount}}</span>
+    </div>
+    </a>
+  </li>
+  {{/each}}
+
+</script>
+<script src='lib/mui/js/mui.js'></script>
+<script src='lib/zepto/zepto.min.js'></script>
+<script src='lib/artTemplate/template-web.js'></script>
+<script src='js/moneyctrl.js'></script>

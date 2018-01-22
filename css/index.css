@@ -1,0 +1,162 @@
+@charset "UTF-8";
+.mmb-search {
+  height: 1.6rem;
+  width: 100%;
+  background-color: #fff;
+  padding: 0.2rem;
+  position: relative;
+}
+.mmb-search input,
+.mmb-search button {
+  border-radius: 1rem;
+  border: 1px solid transparent ;
+  padding: 0.16rem;
+}
+.mmb-search input {
+  background-color: #D6D6D6;
+  width: 12rem;
+  height: 1rem;
+  margin-right: 1rem;
+  margin-left: 0.4rem;
+}
+.mmb-search button {
+  position: absolute;
+  top: 0.16rem;
+  right: 0.4rem;
+  color: #fff;
+  background-color: #FF841D;
+  width: 2rem;
+}
+.mmb-nav {
+  margin: 0.2rem 0;
+  background-color: #fff;
+}
+.mmb-nav ul {
+  margin: 0;
+  padding: 0;
+}
+.mmb-nav li {
+  width: 25%;
+  float: left;
+}
+.mmb-nav li img {
+  display: block;
+  height: 1.8rem;
+  width: 1.8rem;
+  margin: 0.4rem auto;
+}
+.mmb-nav li p {
+  margin-top: 0.2rem;
+  text-align: center;
+}
+.mmb-list {
+  background-color: #fff;
+}
+.mmb-list .recomm {
+  height: 1.2rem;
+  width: 100%;
+  background-color: #FF9812;
+  padding: 0 0.2rem;
+}
+.mmb-list .recomm strong {
+  font-size: 0.5rem;
+  line-height: 1.2rem;
+  color: #fff;
+  font-weight: normal;
+}
+.mmb-list .recomm a {
+  float: right;
+  line-height: 1.6rem;
+}
+.mmb-list .recomm a img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.mmb-list .info-list {
+  margin-top: 0.4rem;
+}
+.mmb-list .info-list li {
+  position: relative;
+  padding: 0.2rem;
+  height: 3rem;
+  border-bottom: 1px solid #ccc;
+}
+.mmb-list .info-list img {
+  float: left;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.8rem;
+}
+.mmb-list .info-list .context {
+  margin-left: 3rem;
+  position: relative;
+}
+.mmb-list .info-list .context .title {
+  height: 2.96rem;
+  position: absolute;
+  top: 0;
+  font-size: 0.4rem;
+  color: #000;
+}
+.mmb-list .info-list .context .title .price {
+  color: red;
+}
+.mmb-list .info-list .context .info {
+  color: #ADACAE;
+  font-size: 0.4rem;
+  position: absolute;
+  bottom: 0rem;
+}
+.mmb-list .info-list .edit {
+  color: #ADACAE;
+  font-size: 0.4rem;
+  position: absolute;
+  right: 0px;
+  bottom: 0.24rem;
+}
+.mmb-list .more {
+  height: 1.2rem;
+  width: 14rem;
+  border: 1px solid #ccc;
+  font-size: 0.4rem;
+  padding: 0 0.2rem;
+  text-align: center;
+  line-height: 1.2rem;
+  margin: 0.06rem auto;
+  border-radius: 0.1rem;
+}
+.mmb-pk .pk {
+  height: 1.2rem;
+  width: 100%;
+  background-color: #FF9812;
+  padding: 0 0.2rem;
+}
+.mmb-pk .pk strong {
+  font-size: 0.5rem;
+  line-height: 1.2rem;
+  color: #fff;
+  font-weight: normal;
+}
+.mmb-pk .pk a {
+  float: right;
+  line-height: 1.6rem;
+}
+.mmb-pk .pk a img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.hide {
+  display: none;
+}
+.mmb-footer .user {
+  font-size: 0.3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.mmb-footer img {
+  height: 0.3rem;
+  width: 0.3rem;
+}
+.mmb-footer p {
+  text-align: center;
+}

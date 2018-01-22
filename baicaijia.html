@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>慢慢买白菜价</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/baicaijia.css">
+
+</head>
+<body>
+<div class="mmb-container">
+  <!--头部-->
+  <div class="mmb-headerss">
+    <a href="index.html">
+      <span class='mui-icon mui-icon-left-nav mui-pull-left'></span>
+    </a>
+    <h3>白菜价-淘宝内部券</h3>
+    <img class='mui-pull-right' src="images/header_app.png" alt="">
+  </div>
+  <!--导航-->
+   <div class="mmb-navs">
+     <!--区域滚动-->
+  <div class="mui-scroll-wrapper mui-slider-indicatorcode mui-segmented-control mui-segmented-control-inverted">
+    <div class="mui-scroll">
+      <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+
+        <div class="mui-scroll nav">
+
+          <a class="mui-control-item ">
+            热销
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+     <!--搜索框-->
+    <div class="search mui-clearfix">
+      <span class='mui-icon mui-icon-search'></span>
+    </div>
+</div>
+
+  <!--列表-->
+  <ul class="big mui-clearfix">
+     <li class='mui-clearfix'>
+       <div class="img-box">
+       </div>
+        <div class="content">
+          <div class="title">
+            <span class="b">[包邮]</span>双十一红包 今日开启
+          </div>
+          <div class="price">
+            <span>劵后</span><em>¥</em>0.0<del>¥0</del>
+          </div>
+          <div class="num">
+            <a href="" class="goquan" target="_blank"></a>
+            <i>
+              <em style="width:1%;"></em>
+              <span>1%</span>
+            </i>
+            <b>已领82张</b>
+          </div>
+          <div class="card">
+            <a href="" target="_blank">点此领15元优惠券</a>
+          </div>
+        </div>
+         <a class='link'target="_blank">下单链接</a>
+     </li>
+
+
+  </ul>
+
+
+  <!--底部-->
+  <div class="mmb-footer mui-clearfix">
+    <ul class='user'>
+      <a href="#">登陆</a>
+      <a href="#">注册</a>
+      <a  class='img'href="#">
+        <img src="images/top.jpg" alt="">
+        <span>返回顶部</span>
+      </a>
+    </ul>
+    <p>手机APP下载慢慢买手机版</p>
+    <p>m.manmanbuy.com</p>
+  </div>
+
+</div>
+</body>
+</html>
+<!--渲染标题模板-->
+<script type='text/template' id='tpl'>
+  {{each result v i}}
+  <a data-id={{v.titleId}} class="mui-control-item cart">
+    {{v.title}}
+  </a>
+  {{/each}}
+</script>
+<!--渲染列表模板-->
+<script type='text/template' id='tpl2'>
+  {{each result v i}}
+  <li class='mui-clearfix'>
+    <div class="img-box">
+      {{@ v.productImg}}
+    </div>
+    <div class="content">
+      <div class="title">
+        {{@ v.productName}}
+      </div>
+      <div class="price">
+        {{@ v.productPrice}}
+      </div>
+      <div class="num">
+        {{@ v.productCouponRemain}}
+      </div>
+      <div class="card">
+        <a href="" target="_blank">点此领15元优惠券</a>
+      </div>
+    </div>
+    <a class='link'target="_blank">下单链接</a>
+  </li>
+  {{/each}}
+</script>
+<script src='lib/mui/js/mui.js'></script>
+<script src='lib/zepto/zepto.min.js'></script>
+<script src='lib/artTemplate/template-web.js'></script>
+<script src='js/baicaijia.js'></script>

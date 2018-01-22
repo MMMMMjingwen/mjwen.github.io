@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>比价商品分类</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/bijia.css">
+
+</head>
+<body>
+
+<div class="mmb-container">
+  <!--头部-->
+  <div class="mmb-header">
+    <a href="index.html"> <img class='mui-pull-left' src="images/header_logo.png" alt=""></a>
+    <img class='mui-pull-right' src="images/header_app.png" alt="">
+
+  </div>
+  <!--搜索框-->
+  <div class="mmb-search">
+    <input type="text" placeholder='输入你想比价的商品'>
+    <button >搜索</button>
+  </div>
+   <!--商品-->
+  <div class="mmb-product mui-clearfix">
+    <div class="setion mui-clearfix">
+      <a href="index.html">首页</a>>
+      <a href="category.html">全部分类</a>>
+      <a href="javascript:(0);">电视</a>>
+      <a href="javascript:(0);">百家好</a>>
+      <button>筛选</button>
+    </div>
+    <div class="proSelf mui-clearfix">
+       <p>索尼/Sony A7R 全画幅数码微单相机 单机身</p>
+      <div class="img-box">
+       <img src='./images/mnav.jpg' alt="">
+       <span>收藏</span>
+      </div>
+      <div class="smallNav">
+        <a href="#">比价购买</a>
+        <a href="#">产品参数</a>
+        <a href="#">评价(2322)</a>
+      </div>
+    </div>
+    <div class="priceNow mui-clearfix">
+
+      <div class="go mui-clearfix">
+        <table width="100%" >
+          <tbody>
+          <tr>
+            <td rowspan="2" class="p_pic" valign="top">
+              <a href="" target="_blank" onclick="trackLog('商品购买','比价页面');">
+                <img src="">
+              </a>
+            </td>
+
+            <td>
+              <a href="" target="_blank" onclick="trackLog('商品购买','比价页面');">中国亚马逊</a>
+            </td>
+            <td class="red">
+              ￥3199.00
+            </td>
+            <td align="center" width="60">
+              <span style="display: inline-block;width: 56px;height: 24px;border-radius: 6px;text-align: center;line-height: 24px;background-color: #ff5500;color: #fff;font-size: 14px;">去购买</span>
+            </td>
+          </tr>
+
+          <tr class="tab2">
+            <td></td>
+            <td class="r">
+            </td>
+            <td></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note mui-clearfix">
+        * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+      </div>
+    </div>
+  </div>
+ <!--评价-->
+    <div class="mmb-pinjia ">
+      <div class="pingjia">
+        网友评价
+      </div>
+      <ul class='pjList'>
+       <!--0000-->
+
+      </ul>
+    </div>
+
+
+  <!--底部-->
+  <div class="mmb-footer mui-clearfix">
+    <ul class='user'>
+      <a href="#">登陆</a>
+      <a href="#">注册</a>
+      <a  class='img'href="#">
+        <img src="images/top.jpg" alt="">
+        <span>返回顶部</span>
+      </a>
+    </ul>
+    <p>手机APP下载慢慢买手机版</p>
+    <p>m.manmanbuy.com</p>
+  </div>
+</div>
+
+</body>
+</html>
+<!--渲染商品数据模板-->
+<script type='text/template' id='tpl'>
+  {{each result v i}}
+  <div class="setion mui-clearfix">
+    <a href="index.html">首页</a>>
+    <a href="category.html">全部分类</a>>
+    <a href="javascript:(0);">{{v.productName.split(' ')[0]}}</a>>
+    <button>筛选</button>
+  </div>
+  <div class="proSelf mui-clearfix">
+    <p>{{v.productName}}</p>
+    <div class="img-box">
+     {{@ v.productImg}}
+      <span>收藏</span>
+    </div>
+    <div class="smallNav">
+      <a href="#">比价购买</a>
+      <a href="#">产品参数</a>
+      <a href="#">评价(2322)</a>
+    </div>
+  </div>
+  <div class="priceNow mui-clearfix">
+    <div class="go mui-clearfix">
+     {{@ v.bjShop}}
+    </div>
+    <div class="note mui-clearfix">
+      * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+    </div>
+  </div>
+  {{/each}}
+</script>
+
+<!--渲染评价模板-->
+<script type='text/template' id='tpl2'>
+  {{each result v i}}
+  <li>
+    <div class='name mui-clearfix'>
+      <span class='mui-pull-left'>{{v.comName}}</span><span class='mui-pull-right'>{{v.comTime}}</span>
+    </div>
+    <div class='ground mui-clearfix'>
+      <span class='mui-pull-left'>{{v.comFrom}}</span>
+    </div>
+    <div class='txt'>{{v.comContent}}</div>
+  </li>
+  {{/each}}
+</script>
+<script src='lib/mui/js/mui.js'></script>
+<script src='lib/zepto/zepto.min.js'></script>
+<script src='lib/artTemplate/template-web.js'></script>
+<script src='js/bijia.js'></script>
